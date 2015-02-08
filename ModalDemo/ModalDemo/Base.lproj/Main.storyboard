@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Orange View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="OrangeViewControllerStoryboardID" id="vXZ-lx-hvc" customClass="OrangeViewController" customModule="ModalDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-QK-hpU">
+                                <rect key="frame" x="0.0" y="20" width="283" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Show Modal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showModalButtonAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="AkU-28-5NX"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="D4e-CO-NlZ">
+                                <rect key="frame" x="152" y="110" width="362" height="399"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89013671875" green="0.45085444615809622" blue="0.27075106171363839" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="v4n-QK-hpU" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="8fI-HV-rsc"/>
+                            <constraint firstItem="D4e-CO-NlZ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="110" id="Ceh-4O-cmQ"/>
+                            <constraint firstAttribute="centerX" secondItem="D4e-CO-NlZ" secondAttribute="centerX" id="Gfg-5d-r8t"/>
+                            <constraint firstItem="v4n-QK-hpU" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="cDJ-3s-z4R"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showModalButton" destination="v4n-QK-hpU" id="LHF-3d-TGk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115" y="94"/>
+        </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="lNB-nN-hM3">
+            <objects>
+                <viewController storyboardIdentifier="BlueViewControllerStoryboardID" id="r3z-ZQ-4KQ" customClass="BlueViewController" customModule="ModalDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mqs-wz-L3c"/>
+                        <viewControllerLayoutGuide type="bottom" id="s6O-EB-xNe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OKJ-7H-d1U">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wct-F2-PwH">
+                                <rect key="frame" x="30" y="20" width="87" height="30"/>
+                                <state key="normal" title="Close Modal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeModalButton:" destination="r3z-ZQ-4KQ" eventType="touchUpInside" id="2eQ-jE-uDv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.034971792121184106" green="0.013795862148802353" blue="0.29086701766304346" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNq-QH-FNy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="740" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo.png" width="400" height="400"/>
+    </resources>
+</document>

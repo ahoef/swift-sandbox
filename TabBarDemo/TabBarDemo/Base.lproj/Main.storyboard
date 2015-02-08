@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ogY-5w-nJH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Luigi-->
+        <scene sceneID="he8-ic-I3t">
+            <objects>
+                <viewController id="8iq-to-901" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Cp-QE-eNZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="raG-T7-0Ik"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yn3-gs-UPI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Luigi" id="nCO-gb-Yep"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBJ-YE-X6b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="237"/>
+        </scene>
+        <!--Mario-->
+        <scene sceneID="e77-Rb-RVz">
+            <objects>
+                <viewController id="upD-60-FSE" customClass="MarioViewController" customModule="TabBarDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tmf-dS-1tC"/>
+                        <viewControllerLayoutGuide type="bottom" id="lZL-Rm-PPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="40Q-5q-fai">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="if you don't make a specific view controller like this one for Mario, the scenes will just be instances of UIViewCOntroller" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tkp-zF-izo">
+                                <rect key="frame" x="-70" y="78" width="786" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2y-l5-4xV">
+                                <rect key="frame" x="89" y="136" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="printStuff:" destination="upD-60-FSE" eventType="touchUpInside" id="oVy-E0-Uja"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="932-k9-DY2">
+                                <rect key="frame" x="99" y="205" width="211" height="126"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.38279510439999997" blue="0.40278540829999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mario" id="7vd-Td-J3j"/>
+                    <connections>
+                        <outlet property="textLabel" destination="932-k9-DY2" id="3ex-7h-fPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjT-dV-LFy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="-425"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8WO-hx-fBV">
+            <objects>
+                <tabBarController id="ogY-5w-nJH" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HTS-g1-Xd4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="upD-60-FSE" kind="relationship" relationship="viewControllers" id="TAD-Xf-8JJ"/>
+                        <segue destination="8iq-to-901" kind="relationship" relationship="viewControllers" id="2Ho-lE-dQ4"/>
+                        <segue destination="eib-3R-KNz" kind="relationship" relationship="viewControllers" id="9ej-9U-tdf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tar-WS-67b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-500" y="427"/>
+        </scene>
+        <!--Peach-->
+        <scene sceneID="N8K-0w-pkM">
+            <objects>
+                <viewController title="Peach" id="eib-3R-KNz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bDz-Jh-0DB"/>
+                        <viewControllerLayoutGuide type="bottom" id="NOw-14-kdR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="exT-5I-slH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.72167078699999998" blue="0.3421979866" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Peach" id="EiZ-km-L2o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yjI-bN-a7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370" y="901"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>51AB7875-A5CF-48C2-B559-097AD22234C1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnimationDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0872FEC95A06F12E4B8B149D2AE94E70AF865800</key>
+		<string>github.com:ahoefinger/swift-sandbox.git</string>
+		<key>500F935060AEF0DC54C05879825ABC45845EBE9A</key>
+		<string>https://github.com/ahoefinger/ah-website.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnimationDemo/AnimationDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0872FEC95A06F12E4B8B149D2AE94E70AF865800</key>
+		<string>../../..</string>
+		<key>500F935060AEF0DC54C05879825ABC45845EBE9A</key>
+		<string>../../../../ah-website</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:ahoefinger/swift-sandbox.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0872FEC95A06F12E4B8B149D2AE94E70AF865800</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>500F935060AEF0DC54C05879825ABC45845EBE9A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ah-website</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0872FEC95A06F12E4B8B149D2AE94E70AF865800</string>
+			<key>IDESourceControlWCCName</key>
+			<string>swift-sandbox</string>
+		</dict>
+	</array>
+</dict>
+</plist>
